@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/styledText.dart';
+import 'package:first_app/diceRoller.dart';
 
 const StartAlignment = Alignment.topLeft;
 const EndAlignment = Alignment.bottomRight;
@@ -13,7 +13,7 @@ class Gradientcontainer extends StatelessWidget {
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [color1, color2],
           begin: StartAlignment,
@@ -21,7 +21,7 @@ class Gradientcontainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: StyledText('Hallo World ...'),
+        child: DiceRoller(),
       ),
     );
   }
